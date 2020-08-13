@@ -18,7 +18,7 @@ public class Tut1 {
         }
         bubblesort(array);
 
-        System.out.println("\nSortind Completed.\nThe sorted array:\n");
+        System.out.println("\nSortind Completed.\nThe sorted array:");
         System.out.print(Arrays.toString(array));
         sc.close();
     
