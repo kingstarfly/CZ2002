@@ -13,6 +13,7 @@ public class P3 {
 
         if (ending <= starting) {
             System.out.println("Error input!");
+            sc.close();
             return;
         }
         String header = "US$    S$\n------------";
@@ -41,5 +42,7 @@ public class P3 {
             System.out.format("%-7d%-7.2f\n", us, us*1.82);
             us+=increment;
         } while (us <= ending);
+
+        sc.close();
     }
 }
