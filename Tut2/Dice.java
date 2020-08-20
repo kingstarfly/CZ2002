@@ -1,9 +1,10 @@
 public class Dice {
     private int valueOfDice;
 
-    public Dice(int value){
-        this.valueOfDice = value;
-    };
+    // public Dice(int value){
+    //     this.valueOfDice = value;
+    // };
+    public Dice(){};
 
     public void setDiceValue(int val) {
         this.valueOfDice = val;

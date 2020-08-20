@@ -45,8 +45,6 @@ public class P2 {
             }
         }
 
-        
-
 
         // display grade
         System.out.printf("Your grade is: %c", grade);
