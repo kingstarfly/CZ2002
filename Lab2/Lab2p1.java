@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class Lab2p1 {
 
-    private static Scanner sc = new Scanner(System.in);
+    public static Scanner sc = new Scanner(System.in);
     public static void main(String[] args) {
         int choice;
         
@@ -23,31 +23,31 @@ public class Lab2p1 {
                     mulTest();
                     break;
                 case 2:
-                    System.out.println(divide(4,7));
-                    System.out.println(divide(7,7));
-                    System.out.println(divide(25,7));
+                    System.out.printf("4/7 = %d\n", divide(4,7));
+                    System.out.printf("7/7 = %d\n", divide(7,7));
+                    System.out.printf("25/7 = %d\n", divide(25,7));
 
                     break;
                 case 3:
-                    System.out.println(modulus(4,7));
-                    System.out.println(modulus(7,7));
-                    System.out.println(modulus(25,7));
+                    System.out.println("4 % 7 = " + modulus(4,7));
+                    System.out.println("7 % 7 = " + modulus(7,7));
+                    System.out.println("25 % 7 = " + modulus(25,7));
                     break;
                 case 4:
-                    System.out.println(countDigits(-12));
-                    System.out.println(countDigits(123));
-                    System.out.println(countDigits(121456));
+                    System.out.printf("n: -12 - count = %d\n", countDigits(-12));
+                    System.out.printf("n: 123 - count = %d\n", countDigits(123));
+                    System.out.printf("n: 121456 - count = %d\n", countDigits(121456));
                     break;
                 case 5:
-                    System.out.println(position(12345, 3));
-                    System.out.println(position(123, 4));
-                    System.out.println(position(12145, 1));
+                    System.out.println("position = " + position(12345, 3));
+                    System.out.println("position = " + position(123, 4));
+                    System.out.println("position = " + position(12145, 1));
                     break;
                 case 6:
-                    System.out.println(extractOddDigits(12345));
-                    System.out.println(extractOddDigits(54123));
-                    System.out.println(extractOddDigits(246));
-                    System.out.println(extractOddDigits(-12));
+                    System.out.println("oddDigits = " + extractOddDigits(12345));
+                    System.out.println("oddDigits = " + extractOddDigits(54123));
+                    System.out.println("oddDigits = " + extractOddDigits(246));
+                    System.out.println("oddDigits = " + extractOddDigits(-12));
                     break;
                 case 7:
                     System.out.println("Program terminating...");
@@ -100,7 +100,7 @@ public class Lab2p1 {
 
     public static int countDigits(int n) {
         if (n<=0) {
-            System.out.println(n + " is not a positive integer");
+            System.out.println("Error input. " + n + " is not a positive integer");
             return -1;
         }
         int count = 0;
@@ -128,7 +128,7 @@ public class Lab2p1 {
 
     public static long extractOddDigits(long num) {
         if (num<=0) {
-            System.out.println(num + " is not a positive integer");
+            System.out.println("Error input. " + num + " is not a positive integer");
             return -1;
         }
         long lastDigit;
