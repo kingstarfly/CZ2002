@@ -17,6 +17,7 @@ public class Lab2p1 {
             System.out.println("6: extract all odd digits");
             System.out.println("7: quit");
             choice = sc.nextInt();
+            System.out.println();
 
             switch (choice) {
                 case 1:
@@ -52,6 +53,7 @@ public class Lab2p1 {
                 case 7:
                     System.out.println("Program terminating...");
             }
+            System.out.println();
             
         } while (choice < 7);
         sc.close();
@@ -100,7 +102,7 @@ public class Lab2p1 {
 
     public static int countDigits(int n) {
         if (n<=0) {
-            System.out.println("Error input. " + n + " is not a positive integer");
+            System.out.printf("Error input. " + n + " is not a positive integer -- ");
             return -1;
         }
         int count = 0;
@@ -128,7 +130,7 @@ public class Lab2p1 {
 
     public static long extractOddDigits(long num) {
         if (num<=0) {
-            System.out.println("Error input. " + num + " is not a positive integer");
+            System.out.printf("Error input. " + num + " is not a positive integer -- ");
             return -1;
         }
         long lastDigit;
